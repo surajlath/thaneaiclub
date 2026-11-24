@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Thane AI Club//Meetup//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:thane-ai-club-2026-11-29@surajlath.github.io
+DTSTAMP:20261125T000000Z
+DTSTART:20261129T050000Z
+DTEND:20261129T070000Z
+SUMMARY:Thane AI Club — free Sunday AI meetup
+LOCATION:Café in Hiranandani Estate / Vasant Vihar\, Thane West (venue in the WhatsApp group)
+DESCRIPTION:Live AI demos\, a live build\, networking and an AI clinic. Venue and updates: https://chat.whatsapp.com/BkUokIUbMJt1Ig8dP57duu
+URL:https://surajlath.github.io/thaneaiclub/
+BEGIN:VALARM
+TRIGGER:-PT2H
+ACTION:DISPLAY
+DESCRIPTION:Thane AI Club at 10:30 AM
+END:VALARM
+END:VEVENT
+END:VCALENDAR

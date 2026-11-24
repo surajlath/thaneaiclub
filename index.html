@@ -1,31 +1,81 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Thane AI Club — free Sunday meetups</title>
-<meta name="description" content="Free Sunday meetups for people building and using AI in Thane. Live demos, an AI clinic, real people.">
-<meta property="og:title" content="Thane AI Club — free Sunday meetups">
-<meta property="og:description" content="First meetup Sun 29 Nov, 10:30 AM · Hiranandani Estate / Vasant Vihar · Free">
-<meta property="og:image" content="https://surajlath.github.io/thaneaiclub/og.png">
+<title>Thane AI Club — free Sunday AI meetup, Sun 29 Nov</title>
+<meta name="description" content="Free Sunday meetups for people building and using AI in Thane. Live demos, a live build, an AI clinic. First meetup Sun 29 Nov, 10:30 AM, Hiranandani Estate / Vasant Vihar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://surajlath.github.io/thaneaiclub/">
+<meta property="og:title" content="Thane AI Club — free Sunday AI meetup">
+<meta property="og:description" content="Sun 29 Nov · 10:30 AM · café in Hiranandani Estate / Vasant Vihar · 30 seats · free">
+<meta property="og:image" content="https://surajlath.github.io/thaneaiclub/og-1200x630.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.png">
 <style>
 *{box-sizing:border-box;margin:0}
-body{min-height:100vh;background:#0B0F1A;color:#F4F1EA;font-family:-apple-system,'Avenir Next','Segoe UI',Roboto,sans-serif;display:flex;align-items:center;justify-content:center;padding:28px}
-main{max-width:440px;width:100%;text-align:center}
-img{width:120px;height:120px;border-radius:50%;margin-bottom:22px}
-h1{font-size:30px;line-height:1.15;font-weight:800;letter-spacing:-.01em}
-h1 em{font-style:normal;color:#C6F432}
-.card{margin:24px 0;padding:18px 20px;border:1px solid rgba(244,241,234,.16);border-radius:16px;background:rgba(244,241,234,.05);text-align:left;font-size:16px;line-height:1.7}
-.card b{color:#FF7A3D}
-a.btn{display:block;background:#25D366;color:#0B0F1A;font-weight:800;font-size:18px;padding:16px;border-radius:14px;text-decoration:none}
-p.small{margin-top:14px;font-size:13px;color:#9A978F}
+:root{--bg:#0B0F1A;--ink:#F4F1EA;--muted:#A9A69E;--lime:#C6F432;--orange:#FF7A3D;--line:rgba(244,241,234,.14)}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,'Avenir Next','Segoe UI',Roboto,sans-serif;line-height:1.5}
+main{max-width:560px;margin:0 auto;padding:28px 22px 60px}
+header{display:flex;align-items:center;gap:12px;margin-bottom:26px}
+header img{width:44px;height:44px;border-radius:50%}
+header b{font-weight:800;letter-spacing:.02em}
+.tag{display:inline-block;border:2px solid var(--lime);color:var(--lime);font-weight:700;font-size:12px;letter-spacing:.16em;padding:5px 12px;border-radius:999px}
+h1{font-size:34px;line-height:1.1;font-weight:800;letter-spacing:-.01em;margin:14px 0 12px}
+h1 em{font-style:normal;color:var(--lime)}
+.lede{color:var(--muted);font-size:17px}
+.card{margin:22px 0;padding:16px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(244,241,234,.04)}
+.card div{display:flex;gap:10px;padding:4px 0}
+.card span{color:var(--orange);width:18px;flex:none}
+a.btn{display:block;text-align:center;background:#25D366;color:#0B0F1A;font-weight:800;font-size:18px;padding:16px;border-radius:14px;text-decoration:none}
+a.btn2{display:block;text-align:center;border:1px solid var(--line);color:var(--ink);font-weight:600;padding:12px;border-radius:12px;text-decoration:none;margin-top:10px}
+.row{display:flex;gap:10px}.row a{flex:1}
+.small{font-size:13px;color:var(--muted);margin-top:10px;text-align:center}
+h2{font-size:20px;margin:36px 0 12px}
+ol{padding-left:0;list-style:none;counter-reset:s}
+ol li{counter-increment:s;display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+ol li:before{content:counter(s);color:var(--bg);background:var(--lime);font-weight:800;border-radius:50%;width:24px;height:24px;flex:none;display:flex;align-items:center;justify-content:center;font-size:13px;margin-top:2px}
+ol li b{display:block}
+.who{display:flex;flex-wrap:wrap;gap:8px}.who span{border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:14px}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:600}
+details p{color:var(--muted);margin-top:8px}
+footer{margin-top:40px;font-size:13px;color:var(--muted);text-align:center}
+footer a{color:var(--muted)}
 </style></head>
 <body><main>
-<img src="logo.png" alt="Thane AI Club logo">
+<header><img src="logo.png" alt=""><b>THANE AI CLUB</b></header>
+
+<span class="tag">AI SUNDAYS · FREE</span>
 <h1>Show what you built with AI.<br><em>Meet who's building.</em></h1>
+<p class="lede">A free Sunday meetup in Thane for people who build with AI, run a business with it, or want to start using it at work.</p>
+
 <div class="card">
-<b>●</b> First meetup: <strong>Sun 29 Nov, 10:30 AM</strong><br>
-<b>●</b> Café in Hiranandani Estate / Vasant Vihar<br>
-<b>●</b> Free · 30 seats · venue shared on WhatsApp
+<div><span>●</span><div><b>Sun 29 Nov · 10:30 AM – 12:30 PM</b></div></div>
+<div><span>●</span><div>Café in Hiranandani Estate / Vasant Vihar — exact venue shared in the WhatsApp group</div></div>
+<div><span>●</span><div>Free entry · 30 seats · order your own coffee</div></div>
 </div>
-<a class="btn" id="join" href="https://chat.whatsapp.com/BkUokIUbMJt1Ig8dP57duu">Join the WhatsApp Community</a>
-<p class="small">Venue, reminders and demo sign-ups are posted there. Reply STOP anytime to leave.</p>
+
+<a class="btn" href="https://chat.whatsapp.com/BkUokIUbMJt1Ig8dP57duu">Join the WhatsApp Community</a>
+<div class="row"><a class="btn2" href="thane-ai-club-29nov.ics">Add to calendar</a><a class="btn2" href="https://wa.me/?text=Free%20AI%20meetup%20in%20Thane%20this%20Sunday%20(29%20Nov%2C%2010%3A30%20AM)%20%E2%80%94%20Thane%20AI%20Club%3A%20https%3A%2F%2Fsurajlath.github.io%2Fthaneaiclub%2F">Share with a friend</a></div>
+<p class="small">Venue, reminders and demo sign-ups are posted in the group. Leave any time.</p>
+
+<h2>What happens on Sunday</h2>
+<ol>
+<li><div><b>3 live demos, 7 minutes each</b>Real things people in Thane built with AI — 5 minutes on screen, 2 for questions.</div></li>
+<li><div><b>A live build</b>Bring a problem from your work. We pick one and build a working fix with AI in 10 minutes, on screen.</div></li>
+<li><div><b>The 1-minute round</b>"One AI tool I used this week, and what it did."</div></li>
+<li><div><b>Networking + AI clinic</b>An asks-and-offers board, and a table where you get your own AI problem unstuck.</div></li>
+</ol>
+
+<h2>Who it's for</h2>
+<div class="who"><span>Developers &amp; makers</span><span>Founders &amp; business owners</span><span>People using AI at work</span><span>Students</span><span>The AI-curious</span></div>
+
+<h2>Questions</h2>
+<details><summary>Is it really free?</summary><p>Yes. The café charges only for what you order.</p></details>
+<details><summary>I'm a beginner. Will I fit in?</summary><p>Yes. Half the room uses AI at work without building anything. The clinic table is there for exactly that.</p></details>
+<details><summary>Can I show something I built?</summary><p>Please do. Reply DEMO in the WhatsApp group; 5 minutes on screen, any stage, any tool.</p></details>
+<details><summary>Do I need a laptop?</summary><p>No. Bring one only if you're demoing or want help at the clinic.</p></details>
+<details><summary>How often?</summary><p>Every other Sunday. After 29 Nov: 13 Dec and 10 Jan.</p></details>
+
+<footer>Thane AI Club · volunteer-run · <a href="https://docs.google.com/document/d/1fZzej28-5up8KS3jYhAa1CYMxnA6MBA_fktVu2i6Hg4/view">Privacy</a> · <a href="https://www.facebook.com/profile.php?id=61596934499230">Facebook</a></footer>
 </main></body></html>
