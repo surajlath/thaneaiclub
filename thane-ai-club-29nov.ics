@@ -2,20 +2,29 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//Thane AI Club//Meetup//EN
 CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:Asia/Kolkata
+BEGIN:STANDARD
+DTSTART:19700101T000000
+TZOFFSETFROM:+0530
+TZOFFSETTO:+0530
+TZNAME:IST
+END:STANDARD
+END:VTIMEZONE
 METHOD:PUBLISH
 BEGIN:VEVENT
 UID:thane-ai-club-2026-11-29@surajlath.github.io
-DTSTAMP:20261125T000000Z
-DTSTART;VALUE=DATE:20261129
-DTEND;VALUE=DATE:20261130
-SUMMARY:Thane AI Club — free Sunday AI meetup
-LOCATION:A café in Thane (time and venue in the WhatsApp group on Friday)
-DESCRIPTION:Live AI demos\, a live build\, networking and an AI clinic. Venue and updates: https://chat.whatsapp.com/BkUokIUbMJt1Ig8dP57duu
+DTSTAMP:20261127T183000Z
+DTSTART;TZID=Asia/Kolkata:20261129T110000
+DTEND;TZID=Asia/Kolkata:20261129T130000
+SUMMARY:Thane AI Club — AI Sunday #1
+LOCATION:Thhikana Cafe\, Hiranandani Estate\, Thane (not the Meadows branch)
+DESCRIPTION:Live AI demos\, a live build\, networking and an AI clinic. Map: https://maps.google.com/?cid=17778487634523324183 . Updates: https://chat.whatsapp.com/BkUokIUbMJt1Ig8dP57duu
 URL:https://surajlath.github.io/thaneaiclub/
 BEGIN:VALARM
-TRIGGER:PT8H
+TRIGGER:-PT2H
 ACTION:DISPLAY
-DESCRIPTION:Thane AI Club today. Check the WhatsApp group for time and venue.
+DESCRIPTION:Thane AI Club at 11 AM\, Thhikana Cafe.
 END:VALARM
 END:VEVENT
 END:VCALENDAR
